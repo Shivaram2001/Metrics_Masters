@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Select an option</mat-label>
+    <mat-select formControlName="selectedOption">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-select>
+    <mat-error *ngIf="form.get('selectedOption')?.hasError('required')">
+      Please select an option
+    </mat-error>
+  </mat-form-field>
+</form>
+
+<p>You selected: {{ selectedOption }}</p>
