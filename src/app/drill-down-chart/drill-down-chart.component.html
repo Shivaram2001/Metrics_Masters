@@ -1,0 +1,51 @@
+<div *ngIf="!isDrilldown">
+    <div style="margin-bottom: 10px;">
+      <b>Hospital Overall</b> | Based on {{obsCount}} Procedure Observations
+    </div>
+    <ngx-charts-bar-horizontal
+      [results]="mainChartData"
+      [view]="[800, 400]"
+      [scheme]="colorScheme"
+      [xAxis]="true"
+      [yAxis]="true"
+      [showDataLabel]="true"
+      [legend]="false"
+      [showXAxisLabel]="false"
+      [showYAxisLabel]="true"
+      [xAxisLabel]="'Percentage'"
+      [yAxisLabel]="'Procedure Step'"
+      [xAxisTicks]="[0, 20, 40, 60, 80, 100]"
+      [xAxisTickFormatting]="formatPercent"
+      [animations] ="true"
+      (select)="onBarSelect($event)">
+    </ngx-charts-bar-horizontal>
+    <div style="color: #888; font-size: 13px; margin-top: 8px;">
+      Click a bar to see department breakdown
+    </div>
+  </div>
+  
+  <div *ngIf="isDrilldown">
+    <div style="margin-bottom: 10px;">
+      <a href="#" (click)="goBack(); $event.preventDefault()">&lt; Back</a>
+      <b style="margin-left: 10px;">{{selectedStep}}</b> | Based on {{obsCount}} Procedure Observations
+    </div>
+    <ngx-charts-bar-horizontal
+      [results]="drilldownData"
+      [view]="[800, 250]"
+      [scheme]="colorScheme"
+      [xAxis]="true"
+      [yAxis]="true"
+      [xScaleMin]="0"
+      [xScaleMax]="100"
+      [showDataLabel]="true"
+      [legend]="false"
+      [showXAxisLabel]="false"
+      [showYAxisLabel]="true"
+      [xAxisLabel]="'Percentage'"
+      [yAxisLabel]="'Department'"
+      [xAxisTicks]="[0, 20, 40, 60, 80, 100]"
+      [xAxisTickFormatting]="formatPercent"
+            [animations] ="true"
+     >
+    </ngx-charts-bar-horizontal>
+  </div>
