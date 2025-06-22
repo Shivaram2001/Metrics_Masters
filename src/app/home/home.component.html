@@ -1,0 +1,39 @@
+<div class="main-container">
+  <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="start">
+    <mat-tab label="Line Chart">
+      <ng-template matTabContent>
+       <app-line-chart></app-line-chart>
+      </ng-template>
+    </mat-tab>
+   
+      <mat-tab label="Bar Chart"> 
+        <ng-template matTabContent>
+         <app-bar-chart></app-bar-chart>
+        </ng-template>
+      </mat-tab> 
+  
+    <mat-tab label="Heat Map">
+      <ng-template matTabContent>
+       <app-line-chart></app-line-chart>
+      </ng-template>
+    </mat-tab>
+  
+       <mat-tab label="Pie Chart">
+      <ng-template matTabContent>
+       <app-line-chart></app-line-chart>
+      </ng-template>
+    </mat-tab>
+  
+      <mat-tab label="Area Chart">
+        <ng-template matTabContent>
+         <app-line-chart></app-line-chart>
+        </ng-template>
+      </mat-tab>
+  
+        <mat-tab label="Drill down Graphs">
+          <ng-template matTabContent>
+           <app-drill-down-chart [chartData]="jsonData"></app-drill-down-chart>
+          </ng-template>
+        </mat-tab>
+  </mat-tab-group>
+</div>

@@ -1,0 +1,342 @@
+{
+    "pivProcedureObservations": [
+        {
+            "assessmentDate": "Feb 2021",
+            "assessmentId": null,
+            "surveyResponsesCount": 10,
+            "unitsComparison": [
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": null,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 0
+                        },
+                        {
+                            "field": "ICU",
+                            "value": null,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 0
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": null,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 0
+                        }
+                    ],
+                    "field": "Performed procedure aseptically",
+                    "value": 0.6,
+                    "percentageValue": null,
+                    "order": -1,
+                    "count": 0
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Performed hand hygiene and donned clean gloves",
+                    "value": 0.2,
+                    "percentageValue": null,
+                    "order": 0,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Start kit utilized",
+                    "value": 0.6,
+                    "percentageValue": null,
+                    "order": 1,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Extension set utilized",
+                    "value": 0.8,
+                    "percentageValue": null,
+                    "order": 2,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Performed skin antisepsis per IFU",
+                    "value": 0.4,
+                    "percentageValue": null,
+                    "order": 3,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Site was not retouched after prep with non-sterile gloves",
+                    "value": 0,
+                    "percentageValue": null,
+                    "order": 4,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Tape/dressing not opened and placed on table/bedrail prior to use",
+                    "value": 0.4,
+                    "percentageValue": null,
+                    "order": 5,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Tape not placed on hub prior to dressing application",
+                    "value": 0.8,
+                    "percentageValue": null,
+                    "order": 6,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Stabilization utilized",
+                    "value": 0.8,
+                    "percentageValue": null,
+                    "order": 7,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Appropriate flushing/clamping sequence observed",
+                    "value": 0.4,
+                    "percentageValue": null,
+                    "order": 8,
+                    "count": 5
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Emergency Department",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 3
+                        },
+                        {
+                            "field": "ICU",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        },
+                        {
+                            "field": "Oncology",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 1
+                        }
+                    ],
+                    "field": "Dressing labeled appropriately",
+                    "value": 0.6,
+                    "percentageValue": null,
+                    "order": 9,
+                    "count": 5
+                }
+            ]
+        }
+    ]
+}
+

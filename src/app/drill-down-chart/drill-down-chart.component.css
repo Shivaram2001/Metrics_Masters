@@ -1,0 +1,111 @@
+::ng-deep .y.axis .tick text {
+  font-size: 13px !important;
+  white-space: pre-line !important;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+::ng-deep .ngx-charts {
+  overflow-x: hidden !important;
+}
+
+.chart-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.view-selector {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.view-selector label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.view-selector input[type="radio"] {
+  margin-right: 8px;
+}
+
+.drilldown-header {
+  margin-bottom: 20px;
+}
+
+.drilldown-header a {
+  text-decoration: none;
+  color: #3f51b5;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.drilldown-header h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.aseptic-summary {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+.ngx-charts-outer {
+  overflow-x: hidden !important;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .view-selector label {
+    font-size: 14px;
+  }
+
+  .drilldown-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .aseptic-summary {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .view-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .drilldown-header {
+    text-align: center;
+  }
+
+  .drilldown-header a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .aseptic-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,17 @@
+.main-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 5px;
+  }
+}
