@@ -1,37 +1,49 @@
-<div *ngIf="!isDrilldown">
-    <div style="margin-bottom: 10px;">
-      <b>Hospital Overall</b> | Based on {{obsCount}} Procedure Observations
-    </div>
-    <ngx-charts-bar-horizontal
-      [results]="mainChartData"
-      [view]="[800, 400]"
-      [scheme]="colorScheme"
-      [xAxis]="true"
-      [yAxis]="true"
-      [showDataLabel]="true"
-      [legend]="false"
-      [showXAxisLabel]="false"
-      [showYAxisLabel]="true"
-      [xAxisLabel]="'Percentage'"
-      [yAxisLabel]="'Procedure Step'"
-      [xAxisTicks]="[0, 20, 40, 60, 80, 100]"
-      [xAxisTickFormatting]="formatPercent"
-      [animations] ="true"
-      (select)="onBarSelect($event)">
-    </ngx-charts-bar-horizontal>
-    <div style="color: #888; font-size: 13px; margin-top: 8px;">
-      Click a bar to see department breakdown
+<div class="chart-view-wrapper">
+  <div [hidden]="isDrilldown">
+    <div style="margin: 0 auto;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 10px; gap: 16px;">
+        <label style="margin-right: 10px; display: flex; align-items: center;">
+          <input type="radio" name="viewType" value="hospital" [(ngModel)]="selectedView" (ngModelChange)="onViewChange($event)" style="margin-right: 6px;">
+          Hospital Overall
+        </label>
+        <label style="margin-right: 10px; display: flex; align-items: center;">
+          <input type="radio" name="viewType" value="unit" [(ngModel)]="selectedView" (ngModelChange)="onViewChange($event)" style="margin-right: 6px;">
+          Unit Comparison
+        </label>
+      </div>
+      <ngx-charts-bar-horizontal
+        [results]="mainChartData"
+        [view]="chartView"
+        [scheme]="colorScheme"
+        [xAxis]="true"
+        [yAxis]="true"
+        [showDataLabel]="true"
+        [legend]="false"
+        [showXAxisLabel]="false"
+        [showYAxisLabel]="true"
+        [xAxisLabel]="'Percentage'"
+        [yAxisLabel]="'Procedure Step'"
+        [xAxisTicks]="[0, 20, 40, 60, 80, 100]"
+        [xAxisTickFormatting]="formatPercent"
+        [xScaleMin]="0"
+        [xScaleMax]="100"
+        [animations]="true"
+        (select)="onBarSelect($event)">
+      </ngx-charts-bar-horizontal>
+      <div style="color: #888; font-size: 13px; margin-top: 8px;" *ngIf="selectedView === 'hospital'">
+        Click a bar to see department breakdown
+      </div>
     </div>
   </div>
-  
-  <div *ngIf="isDrilldown">
+
+  <div [hidden]="!isDrilldown">
     <div style="margin-bottom: 10px;">
       <a href="#" (click)="goBack(); $event.preventDefault()">&lt; Back</a>
       <b style="margin-left: 10px;">{{selectedStep}}</b> | Based on {{obsCount}} Procedure Observations
     </div>
     <ngx-charts-bar-horizontal
       [results]="drilldownData"
-      [view]="[800, 250]"
+      [view]="drilldownChartView"
       [scheme]="colorScheme"
       [xAxis]="true"
       [yAxis]="true"
@@ -45,7 +57,7 @@
       [yAxisLabel]="'Department'"
       [xAxisTicks]="[0, 20, 40, 60, 80, 100]"
       [xAxisTickFormatting]="formatPercent"
-            [animations] ="true"
-     >
+      [animations]="true">
     </ngx-charts-bar-horizontal>
   </div>
+</div>

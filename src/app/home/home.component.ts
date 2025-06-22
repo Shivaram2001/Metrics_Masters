@@ -6,6 +6,7 @@ import { BarChartComponent } from '../bar-chart/bar-chart.component';
 import { DrillDownChartComponent } from '../drill-down-chart/drill-down-chart.component';
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [MatTabsModule, BarChartComponent, LineChartComponent, DrillDownChartComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

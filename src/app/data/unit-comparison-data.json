@@ -1,0 +1,269 @@
+{
+    "pivUnitComparisonSummaryDetails": [
+        {
+            "assessmentDate": "Feb 2021",
+            "assessmentId": null,
+            "surveyResponsesCount": 0,
+            "unitsComparison": [
+                {
+                    "details": [
+                        {
+                            "field": "Performed procedure aseptically",
+                            "value": null,
+                            "percentageValue": null,
+                            "order": -1,
+                            "count": 0
+                        },
+                        {
+                            "field": "Performed hand hygiene and donned clean gloves",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 0
+                        },
+                        {
+                            "field": "Start kit utilized",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 1,
+                            "count": 0
+                        },
+                        {
+                            "field": "Extension set utilized",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 2,
+                            "count": 0
+                        },
+                        {
+                            "field": "Performed skin antisepsis per IFU",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 3,
+                            "count": 0
+                        },
+                        {
+                            "field": "Site was not retouched after prep with non-sterile gloves",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 4,
+                            "count": 0
+                        },
+                        {
+                            "field": "Tape/dressing not opened and placed on table/bedrail prior to use",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 5,
+                            "count": 0
+                        },
+                        {
+                            "field": "Tape not placed on hub prior to dressing application",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 6,
+                            "count": 0
+                        },
+                        {
+                            "field": "Stabilization utilized",
+                            "value": 0.67,
+                            "percentageValue": null,
+                            "order": 7,
+                            "count": 0
+                        },
+                        {
+                            "field": "Appropriate flushing/clamping sequence observed",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 8,
+                            "count": 0
+                        },
+                        {
+                            "field": "Dressing labeled appropriately",
+                            "value": 0.33,
+                            "percentageValue": null,
+                            "order": 9,
+                            "count": 0
+                        }
+                    ],
+                    "field": "Emergency Department",
+                    "value": 0.4,
+                    "percentageValue": null,
+                    "order": 0,
+                    "count": 3
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Performed procedure aseptically",
+                            "value": null,
+                            "percentageValue": null,
+                            "order": -1,
+                            "count": 0
+                        },
+                        {
+                            "field": "Performed hand hygiene and donned clean gloves",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 0
+                        },
+                        {
+                            "field": "Start kit utilized",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 1,
+                            "count": 0
+                        },
+                        {
+                            "field": "Extension set utilized",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 2,
+                            "count": 0
+                        },
+                        {
+                            "field": "Performed skin antisepsis per IFU",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 3,
+                            "count": 0
+                        },
+                        {
+                            "field": "Site was not retouched after prep with non-sterile gloves",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 4,
+                            "count": 0
+                        },
+                        {
+                            "field": "Tape/dressing not opened and placed on table/bedrail prior to use",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 5,
+                            "count": 0
+                        },
+                        {
+                            "field": "Tape not placed on hub prior to dressing application",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 6,
+                            "count": 0
+                        },
+                        {
+                            "field": "Stabilization utilized",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 7,
+                            "count": 0
+                        },
+                        {
+                            "field": "Appropriate flushing/clamping sequence observed",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 8,
+                            "count": 0
+                        },
+                        {
+                            "field": "Dressing labeled appropriately",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 9,
+                            "count": 0
+                        }
+                    ],
+                    "field": "ICU",
+                    "value": 0.4,
+                    "percentageValue": null,
+                    "order": 0,
+                    "count": 1
+                },
+                {
+                    "details": [
+                        {
+                            "field": "Performed procedure aseptically",
+                            "value": null,
+                            "percentageValue": null,
+                            "order": -1,
+                            "count": 0
+                        },
+                        {
+                            "field": "Performed hand hygiene and donned clean gloves",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 0,
+                            "count": 0
+                        },
+                        {
+                            "field": "Start kit utilized",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 1,
+                            "count": 0
+                        },
+                        {
+                            "field": "Extension set utilized",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 2,
+                            "count": 0
+                        },
+                        {
+                            "field": "Performed skin antisepsis per IFU",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 3,
+                            "count": 0
+                        },
+                        {
+                            "field": "Site was not retouched after prep with non-sterile gloves",
+                            "value": 0,
+                            "percentageValue": null,
+                            "order": 4,
+                            "count": 0
+                        },
+                        {
+                            "field": "Tape/dressing not opened and placed on table/bedrail prior to use",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 5,
+                            "count": 0
+                        },
+                        {
+                            "field": "Tape not placed on hub prior to dressing application",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 6,
+                            "count": 0
+                        },
+                        {
+                            "field": "Stabilization utilized",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 7,
+                            "count": 0
+                        },
+                        {
+                            "field": "Appropriate flushing/clamping sequence observed",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 8,
+                            "count": 0
+                        },
+                        {
+                            "field": "Dressing labeled appropriately",
+                            "value": 1,
+                            "percentageValue": null,
+                            "order": 9,
+                            "count": 0
+                        }
+                    ],
+                    "field": "Oncology",
+                    "value": 0.9,
+                    "percentageValue": null,
+                    "order": 0,
+                    "count": 1
+                }
+            ]
+        }
+    ]
+}
