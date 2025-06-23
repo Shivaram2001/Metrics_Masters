@@ -1,0 +1,370 @@
+{
+    "occurrenceDetails": [
+        {
+            "assessmentId": 1,
+            "assessmentMonthYear": "Feb 2021",
+            "basedSurveyResponsesCount": 20,
+            "avgLengthStay": null,
+            "avgNumberAttempts": 2.6,
+            "avgDwellTimeValue": 50.75,
+            "dwellTimePolicyForFacility": null,
+            "avgDwellTimeValuePercentage": -16,
+            "lineChartGroupData": [
+                {
+                    "field": "1 Day",
+                    "value": 0.85
+                },
+                {
+                    "field": "2 Days",
+                    "value": 0.55
+                },
+                {
+                    "field": "3 Days",
+                    "value": 0.25
+                },
+                {
+                    "field": "4 Days",
+                    "value": 0.05
+                },
+                {
+                    "field": "5 Days",
+                    "value": 0
+                },
+                {
+                    "field": "6+ Days",
+                    "value": 0
+                }
+            ],
+            "pivDwellTimeAverageData": {
+                "starPositionX1": "2 Days",
+                "starPositionX2": "0.1145833333333333333333333333",
+                "starYValue": 0,
+                "avgDwellTime": "50.75 Hours"
+            },
+            "reasonsForPivRemovalList": [
+                {
+                    "field": "1 Day",
+                    "values": [
+                        "Phlebitis",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Infiltration",
+                        "Symptomatic",
+                        "Occlusion",
+                        "Dislodgement"
+                    ]
+                },
+                {
+                    "field": "2 Days",
+                    "values": [
+                        "Phlebitis",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Infiltration",
+                        "Symptomatic",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "3 Days",
+                    "values": [
+                        "Phlebitis",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Infiltration"
+                    ]
+                },
+                {
+                    "field": "4 Days",
+                    "values": [
+                        "Not Documented"
+                    ]
+                },
+                {
+                    "field": "5 Days",
+                    "values": []
+                },
+                {
+                    "field": "6+ Days",
+                    "values": []
+                }
+            ]
+        },
+        {
+            "assessmentId": 2,
+            "assessmentMonthYear": "Feb 2020",
+            "basedSurveyResponsesCount": 10,
+            "avgLengthStay": null,
+            "avgNumberAttempts": 2.6,
+            "avgDwellTimeValue": 60.7,
+            "dwellTimePolicyForFacility": null,
+            "avgDwellTimeValuePercentage": -23,
+            "lineChartGroupData": [
+                {
+                    "field": "1 Day",
+                    "value": 0.8
+                },
+                {
+                    "field": "2 Days",
+                    "value": 0.6
+                },
+                {
+                    "field": "3 Days",
+                    "value": 0.4
+                },
+                {
+                    "field": "4 Days",
+                    "value": 0.3
+                },
+                {
+                    "field": "5 Days",
+                    "value": 0.1
+                },
+                {
+                    "field": "6+ Days",
+                    "value": 0.1
+                }
+            ],
+            "pivDwellTimeAverageData": {
+                "starPositionX1": "2 Days",
+                "starPositionX2": "0.5291666666666666666666666667",
+                "starYValue": 0,
+                "avgDwellTime": "60.7 Hours"
+            },
+            "reasonsForPivRemovalList": [
+                {
+                    "field": "1 Day",
+                    "values": [
+                        "Phlebitis",
+                        "Not Documented",
+                        "Infiltration",
+                        "Reasonable Removal",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "2 Days",
+                    "values": [
+                        "Not Documented",
+                        "Infiltration",
+                        "Reasonable Removal",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "3 Days",
+                    "values": [
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "4 Days",
+                    "values": [
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "5 Days",
+                    "values": [
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "6+ Days",
+                    "values": [
+                        "Occlusion"
+                    ]
+                }
+            ]
+        },
+        {
+            "assessmentId": 3,
+            "assessmentMonthYear": "Feb 2019",
+            "basedSurveyResponsesCount": 16,
+            "avgLengthStay": null,
+            "avgNumberAttempts": 2.6,
+            "avgDwellTimeValue": 78.5,
+            "dwellTimePolicyForFacility": null,
+            "avgDwellTimeValuePercentage": 13,
+            "lineChartGroupData": [
+                {
+                    "field": "1 Day",
+                    "value": 0.9
+                },
+                {
+                    "field": "2 Days",
+                    "value": 0.7
+                },
+                {
+                    "field": "3 Days",
+                    "value": 0.6
+                },
+                {
+                    "field": "4 Days",
+                    "value": 0.5
+                },
+                {
+                    "field": "5 Days",
+                    "value": 0.2
+                },
+                {
+                    "field": "6+ Days",
+                    "value": 0.2
+                }
+            ],
+            "pivDwellTimeAverageData": {
+                "starPositionX1": "3 Days",
+                "starPositionX2": "0.2708333333333333333333333333",
+                "starYValue": 0,
+                "avgDwellTime": "78.5 Hours"
+            },
+            "reasonsForPivRemovalList": [
+                {
+                    "field": "1 Day",
+                    "values": [
+                        "Phlebitis",
+                        "Infiltration",
+                        "Occlusion",
+                        "Extravasation",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Symptomatic"
+                    ]
+                },
+                {
+                    "field": "2 Days",
+                    "values": [
+                        "Infiltration",
+                        "Occlusion",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Symptomatic"
+                    ]
+                },
+                {
+                    "field": "3 Days",
+                    "values": [
+                        "Infiltration",
+                        "Occlusion",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Symptomatic"
+                    ]
+                },
+                {
+                    "field": "4 Days",
+                    "values": [
+                        "Occlusion",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Symptomatic"
+                    ]
+                },
+                {
+                    "field": "5 Days",
+                    "values": [
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "6+ Days",
+                    "values": [
+                        "Occlusion"
+                    ]
+                }
+            ]
+        },
+        {
+            "assessmentId": 4,
+            "assessmentMonthYear": "Feb 2018",
+            "basedSurveyResponsesCount": 13,
+            "avgLengthStay": null,
+            "avgNumberAttempts": 2.5,
+            "avgDwellTimeValue": 69.75,
+            "dwellTimePolicyForFacility": null,
+            "avgDwellTimeValuePercentage": null,
+            "lineChartGroupData": [
+                {
+                    "field": "1 Day",
+                    "value": 0.75
+                },
+                {
+                    "field": "2 Days",
+                    "value": 0.63
+                },
+                {
+                    "field": "3 Days",
+                    "value": 0.63
+                },
+                {
+                    "field": "4 Days",
+                    "value": 0.38
+                },
+                {
+                    "field": "5 Days",
+                    "value": 0.13
+                },
+                {
+                    "field": "6+ Days",
+                    "value": 0
+                }
+            ],
+            "pivDwellTimeAverageData": {
+                "starPositionX1": "2 Days",
+                "starPositionX2": "0.90625",
+                "starYValue": 0,
+                "avgDwellTime": "69.75 Hours"
+            },
+            "reasonsForPivRemovalList": [
+                {
+                    "field": "1 Day",
+                    "values": [
+                        "Phlebitis",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "2 Days",
+                    "values": [
+                        "Phlebitis",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "3 Days",
+                    "values": [
+                        "Phlebitis",
+                        "Not Documented",
+                        "Reasonable Removal",
+                        "Occlusion"
+                    ]
+                },
+                {
+                    "field": "4 Days",
+                    "values": [
+                        "Phlebitis",
+                        "Reasonable Removal"
+                    ]
+                },
+                {
+                    "field": "5 Days",
+                    "values": [
+                        "Phlebitis"
+                    ]
+                },
+                {
+                    "field": "6+ Days",
+                    "values": []
+                }
+            ]
+        }
+    ]
+}
