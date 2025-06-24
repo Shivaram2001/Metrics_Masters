@@ -31,7 +31,7 @@ export class LineChartComponent implements OnInit {
     domain: ['#5AA454'],
   };
 
-  ngOnInit() {
+  ngOnInit() {  
     this.prepareMainChart();
   }
 

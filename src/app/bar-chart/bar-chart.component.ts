@@ -3,7 +3,6 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { Color, ScaleType } from '@swimlane/ngx-charts';
 import { CommonModule } from '@angular/common';
 import * as data from '../data/bar-graph.json';
-import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-bar-chart',
@@ -76,17 +75,5 @@ export class BarChartComponent implements OnInit {
       this.cdRef.detectChanges();
     });
   }
-
-  downloadChart() {
-  const chartElement = document.getElementById('chartToCapture');
-  if (!chartElement) return;
-
-  html2canvas(chartElement).then(canvas => {
-    const link = document.createElement('a');
-    link.href = canvas.toDataURL('image/png');
-    link.download = 'bar-chart.png';
-    link.click();
-  });
-}
 }
 
