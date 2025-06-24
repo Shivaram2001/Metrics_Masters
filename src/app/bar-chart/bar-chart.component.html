@@ -1,1 +1,22 @@
-<p>bar-chart works!</p>
+
+<div class="chart-view-wrapper" id="chartToCapture">
+   <div class="chart-view-wrapper">
+  <div class="chart-title">CLABSI Occurrence by Device Type</div>
+  <ngx-charts-bar-vertical-2d
+    [results]="mainChartData"
+    [view]="chartView"
+    [scheme]="colorScheme"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [xAxisLabel]="'Year'"
+    [showYAxisLabel]="true"
+    [yAxisLabel]="'Device Type'"
+    [animations]="true">
+  </ngx-charts-bar-vertical-2d>
+</div>
+
+</div>
+
+<button (click)="downloadChart()">Download Chart</button>
