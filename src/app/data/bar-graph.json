@@ -1,0 +1,92 @@
+{
+    "clabsiOccurrenceByDeviceType": [
+        {
+            "year": 2021,
+            "basedSurveyResponsesCount": 20,
+            "details": [
+                {
+                    "value": 3,
+                    "field": "PICC"
+                },
+                {
+                    "value": 2,
+                    "field": "CVC"
+                },
+                {
+                    "value": 0,
+                    "field": "Port"
+                },
+                {
+                    "value": 1,
+                    "field": "HD"
+                }
+            ]
+        },
+        {
+            "year": 2020,
+            "basedSurveyResponsesCount": 10,
+            "details": [
+                {
+                    "value": 1,
+                    "field": "PICC"
+                },
+                {
+                    "value": 0,
+                    "field": "CVC"
+                },
+                {
+                    "value": 3,
+                    "field": "Port"
+                },
+                {
+                    "value": 2,
+                    "field": "HD"
+                }
+            ]
+        },
+        {
+            "year": 2019,
+            "basedSurveyResponsesCount": 16,
+            "details": [
+                {
+                    "value": 2,
+                    "field": "PICC"
+                },
+                {
+                    "value": 1,
+                    "field": "CVC"
+                },
+                {
+                    "value": 0,
+                    "field": "Port"
+                },
+                {
+                    "value": 3,
+                    "field": "HD"
+                }
+            ]
+        },
+        {
+            "year": 2018,
+            "basedSurveyResponsesCount": 13,
+            "details": [
+                {
+                    "value": 0,
+                    "field": "PICC"
+                },
+                {
+                    "value": 4,
+                    "field": "CVC"
+                },
+                {
+                    "value": 3,
+                    "field": "Port"
+                },
+                {
+                    "value": 2,
+                    "field": "HD"
+                }
+            ]
+        }
+    ]
+}

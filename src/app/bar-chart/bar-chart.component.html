@@ -1,1 +1,26 @@
-<p>bar-chart works!</p>
+<div class="chart-view-wrapper" id="chartToCapture">
+  <div class="chart-title">CLABSI Occurrence by Device Type</div>
+
+  <div class="chart-legend-layout">
+    <ngx-charts-bar-vertical-2d
+      [results]="mainChartData"
+      [view]="chartView"
+      [scheme]="colorScheme"
+      [xAxis]="true"
+      [yAxis]="true"
+      [legend]="false"
+      [showXAxisLabel]="true"
+      [xAxisLabel]="'Year'"
+      [showYAxisLabel]="true"
+      [yAxisLabel]="'Number of CLABSIs'"
+      [animations]="true">
+    </ngx-charts-bar-vertical-2d>
+  </div>
+</div>
+
+<div class="custom-legend">
+  <div *ngFor="let item of mainChartData" class="legend-item">
+    <span class="legend-color" [style.background]="getColor(item.name)"></span>
+    <span class="legend-label">{{ item.name }}</span>
+  </div>
+</div>

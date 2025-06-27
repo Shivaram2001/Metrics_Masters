@@ -1,0 +1,41 @@
+.custom-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #333;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+::ng-deep .y.axis-label {
+  transform: none !important;
+  text-anchor: middle !important;
+  writing-mode: horizontal-tb !important;
+  alignment-baseline: middle;
+  dominant-baseline: middle;
+  font-size: 13px;
+}
+
+.chart-view-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+  padding: 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}

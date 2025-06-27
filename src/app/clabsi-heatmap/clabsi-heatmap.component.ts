@@ -2,25 +2,25 @@ import { Component, OnInit, ChangeDetectorRef, ElementRef } from '@angular/core'
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { Color, ScaleType } from '@swimlane/ngx-charts';
 import { CommonModule } from '@angular/common';
-import * as data from '../data/bar-graph.json';
+import * as data from '../data/heat-map.json';
 
 @Component({
-  selector: 'app-bar-chart',
+  selector: 'app-heat-map',
   standalone: true,
   imports: [NgxChartsModule, CommonModule],
-  templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css']
+  templateUrl: './heat-map.component.html',
+  styleUrls: ['./heat-map.component.css']
 })
-export class BarChartComponent implements OnInit {
+export class HeatMapComponent implements OnInit {
   chartData = data;
-  mainChartData: any[] = [];
+  heatmapData: any[] = [];
   chartView: [number, number] = [0, 0];
-  barHeight = 40;
+  cellHeight = 40;
   colorScheme: Color = {
-    name: 'custom',
-    group: ScaleType.Ordinal,
+    name: 'heatmap',
+    group: ScaleType.Quantile,
     selectable: true,
-    domain: ['#0288d1', '#c2185b', '#fbc02d', '#7b1fa2']
+    domain: ['#ffffb2', '#fecc5c', '#fd8d3c', '#f03b20', '#bd0026']
   };
   private resizeObserver!: ResizeObserver;
   private chartContainer!: HTMLElement | null;
@@ -28,7 +28,7 @@ export class BarChartComponent implements OnInit {
   constructor(private cdRef: ChangeDetectorRef, private elRef: ElementRef) {}
 
   ngOnInit() {
-    this.formatChartData();
+    this.formatHeatmapData();
   }
 
   ngAfterViewInit() {
@@ -40,7 +40,7 @@ export class BarChartComponent implements OnInit {
     if (this.resizeObserver) this.resizeObserver.disconnect();
   }
 
-  formatChartData() {
+  formatHeatmapData() {
     const devices = ['PICC', 'CVC', 'Port', 'HD'];
     const seriesMap = new Map<string, any>();
 
@@ -57,7 +57,7 @@ export class BarChartComponent implements OnInit {
       });
     });
 
-    this.mainChartData = Array.from(seriesMap.values());
+    this.heatmapData = Array.from(seriesMap.values());
     this.updateChartView();
   }
 
@@ -70,15 +70,9 @@ export class BarChartComponent implements OnInit {
   updateChartView() {
     setTimeout(() => {
       const width = this.chartContainer?.offsetWidth || 800;
-      const height = this.mainChartData.length * this.barHeight + 80;
+      const height = this.heatmapData.length * this.cellHeight + 100;
       this.chartView = [width, height];
       this.cdRef.detectChanges();
     });
   }
-
-  getColor(name: string): string {
-  const index = this.mainChartData.findIndex(item => item.name === name);
-  return this.colorScheme.domain[index % this.colorScheme.domain.length];
 }
-}
-
