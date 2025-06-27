@@ -1,0 +1,14 @@
+<div class="chart-view-wrapper" id="chartToCapture">
+  <div class="chart-title">CLABSI Occurrence Heatmap</div>
+  <ngx-charts-heat-map
+    [view]="chartView"
+    [scheme]="colorScheme"
+    [results]="heatmapData"
+    [xAxis]="true"
+    [yAxis]="true"
+    [xAxisLabel]="'Year'"
+    [yAxisLabel]="'Number of CLABSIs'"
+    [animations]="true"
+    [tooltipDisabled]="false">
+  </ngx-charts-heat-map>
+</div>

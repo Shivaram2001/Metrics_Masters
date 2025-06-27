@@ -4,13 +4,16 @@ import { LineChartComponent } from '../line-chart/line-chart.component';
 import hospitalData from '../data/hospital-data.json'; 
 import { BarChartComponent } from '../bar-chart/bar-chart.component';
 import { DrillDownChartComponent } from '../drill-down-chart/drill-down-chart.component';
+import { HeatMapComponent } from '../clabsi-heatmap/clabsi-heatmap.component';
+import { AreaChartComponent } from '../area-chart/area-chart.component';
+
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatTabsModule, BarChartComponent, LineChartComponent, DrillDownChartComponent],
+  imports: [MatTabsModule, BarChartComponent, LineChartComponent, DrillDownChartComponent, HeatMapComponent, AreaChartComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -1,0 +1,92 @@
+{
+  "clabsiOccurrenceByDeviceType": [
+    {
+      "year": 2022,
+      "basedSurveyResponsesCount": 70,
+      "details": [
+        {
+          "value": 10,
+          "field": "PICC"
+        },
+        {
+          "value": 0,
+          "field": "CVC"
+        },
+        {
+          "value": 4,
+          "field": "Port"
+        },
+        {
+          "value": 2,
+          "field": "HD"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "basedSurveyResponsesCount": 19,
+      "details": [
+        {
+          "value": 2,
+          "field": "PICC"
+        },
+        {
+          "value": 3,
+          "field": "CVC"
+        },
+        {
+          "value": 9,
+          "field": "Port"
+        },
+        {
+          "value": 0,
+          "field": "HD"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "basedSurveyResponsesCount": 29,
+      "details": [
+        {
+          "value": 4,
+          "field": "PICC"
+        },
+        {
+          "value": 5,
+          "field": "CVC"
+        },
+        {
+          "value": 8,
+          "field": "Port"
+        },
+        {
+          "value": 5,
+          "field": "HD"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "basedSurveyResponsesCount": 70,
+      "details": [
+        {
+          "value": 10,
+          "field": "PICC"
+        },
+        {
+          "value": 5,
+          "field": "CVC"
+        },
+        {
+          "value": 9,
+          "field": "Port"
+        },
+        {
+          "value": 5,
+          "field": "HD"
+        }
+      ]
+    }
+  ]
+}

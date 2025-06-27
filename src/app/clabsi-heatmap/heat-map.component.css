@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.chart-view-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Optional: prevent the chart from stretching too far */
+::ng-deep .ngx-charts {
+  margin: 0 auto !important;
+  display: block !important;
+}
