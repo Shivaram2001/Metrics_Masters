@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as pivcJson from '../data/pivc-dwell-time.json';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { LegendPosition, NgxChartsModule } from '@swimlane/ngx-charts';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -26,6 +26,7 @@ export class LineChartComponent implements OnInit {
   yAxisLabel: string = 'Population';
   timeline: boolean = true;
   chartView: [number, number] = [0, 0]
+  legendBelow: LegendPosition = LegendPosition.Below
 
   colorScheme = {
     domain: ['#5AA454'],

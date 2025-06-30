@@ -9,11 +9,12 @@ import { AreaChartComponent } from '../area-chart/area-chart.component';
 
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatTabsModule, BarChartComponent, LineChartComponent, DrillDownChartComponent, HeatMapComponent, AreaChartComponent],
+  imports: [MatTabsModule, BarChartComponent, LineChartComponent, DrillDownChartComponent, HeatMapComponent, AreaChartComponent, MatIconModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

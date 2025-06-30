@@ -4,6 +4,29 @@
   max-width: 1200px;
 }
 
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn:hover {
+  cursor: pointer;
+}
+
+.chart-parent {
+  display: flex;
+}
+
+.download-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  margin: 10px 0 4px 8px;
+}
+
 @media (max-width: 768px) {
   .main-container {
     padding: 10px;

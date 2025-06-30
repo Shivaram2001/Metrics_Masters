@@ -2,40 +2,122 @@
   <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="start">
     <mat-tab label="Line Chart">
       <ng-template matTabContent>
-       <app-line-chart></app-line-chart>
+        <div class="chart-parent">
+          <app-line-chart></app-line-chart>
+          <div class="download-btns">
+            <a #btn (click)="exportChartAsPdf()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PDF</span>
+              </span>
+            </a>
+            <a #btn (click)="exportChartAsImage()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PNG</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </ng-template>
     </mat-tab>
-   
-      <mat-tab label="Bar Chart"> 
-        <ng-template matTabContent>
-         <app-bar-chart></app-bar-chart>
-        </ng-template>
-      </mat-tab> 
-  
+
+    <mat-tab label="Bar Chart">
+      <ng-template matTabContent>
+        <div class="chart-parent">
+          <app-bar-chart></app-bar-chart>
+          <div class="download-btns">
+            <a #btn (click)="exportChartAsPdf()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PDF</span>
+              </span>
+            </a>
+            <a #btn (click)="exportChartAsImage()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PNG</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </ng-template>
+    </mat-tab>
+
     <mat-tab label="Heat Map">
       <ng-template matTabContent>
-       <app-heat-map></app-heat-map>
+        <div class="chart-parent">
+          <app-heat-map></app-heat-map>
+          <div class="download-btns">
+            <a #btn (click)="exportChartAsPdf()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PDF</span>
+              </span>
+            </a>
+            <a #btn (click)="exportChartAsImage()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PNG</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </ng-template>
     </mat-tab>
-  
-       <mat-tab label="Pie Chart">
+
+    <mat-tab label="Pie Chart">
       <ng-template matTabContent>
-       <app-line-chart></app-line-chart>
+        <div class="chart-parent">
+          <app-line-chart></app-line-chart>
+          <div class="download-btns">
+            <a #btn (click)="exportChartAsPdf()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PDF</span>
+              </span>
+            </a>
+            <a #btn (click)="exportChartAsImage()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PNG</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </ng-template>
     </mat-tab>
-  
-      <mat-tab label="Area Chart">
-        <ng-template matTabContent>
-         <app-area-chart></app-area-chart>
-        </ng-template>
-      </mat-tab>
-  
-        <mat-tab label="Drill down Graphs">
-          <ng-template matTabContent>
-           <app-drill-down-chart [chartData]="jsonData"></app-drill-down-chart>
-          </ng-template>
-        </mat-tab>
+
+    <mat-tab label="Area Chart">
+      <ng-template matTabContent>
+        <div class="chart-parent">
+          <app-area-chart></app-area-chart>
+          <div class="download-btns">
+            <a #btn (click)="exportChartAsPdf()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PDF</span>
+              </span>
+            </a>
+            <a #btn (click)="exportChartAsImage()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PNG</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Drill down Graphs">
+      <ng-template matTabContent>
+        <div class="chart-parent">
+          <app-drill-down-chart [chartData]="jsonData"></app-drill-down-chart>
+          <div class="download-btns">
+            <a #btn (click)="exportChartAsPdf()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PDF</span>
+              </span>
+            </a>
+            <a #btn (click)="exportChartAsImage()"><span class="download-btn">
+                <mat-icon aria-hidden="false" aria-label="Download as PDF" fontIcon="download"></mat-icon>
+                <span>PNG</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </ng-template>
+    </mat-tab>
   </mat-tab-group>
-  <div><button #btn (click)="exportChartAsPdf()">Export as PDF</button></div>
-  <div><button #btn (click)="exportChartAsImage()">Export as PNG</button></div>
 </div>
