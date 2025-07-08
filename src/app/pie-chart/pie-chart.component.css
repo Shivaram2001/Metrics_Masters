@@ -1,0 +1,23 @@
+.chart-view-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+::ng-deep ngx-charts-pie-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::ng-deep svg g.arc {
+  transform: scale(0.95);
+}
+
+::ng-deep svg .arc text {
+  font-size: 12px;
+}

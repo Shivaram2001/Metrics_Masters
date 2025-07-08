@@ -16,6 +16,8 @@ export class PieChartComponent implements OnInit {
 
   legend: boolean = true;
   showLabels: boolean = true;
+  legendPosition: LegendPosition = LegendPosition.Below;
+
 
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
@@ -23,7 +25,11 @@ export class PieChartComponent implements OnInit {
 
  
 ngOnInit() {
-    this.pieData = (data as any).default;
-  }
+  this.pieData = (data as any).default;
+
+  // Adjust view size based on screen width
+  const screenWidth = window.innerWidth;
+  this.chartView = screenWidth < 600 ? [300, 300] : [700, 700];
+}
 }
 
