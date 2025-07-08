@@ -6,6 +6,8 @@ import { BarChartComponent } from '../bar-chart/bar-chart.component';
 import { DrillDownChartComponent } from '../drill-down-chart/drill-down-chart.component';
 import { HeatMapComponent } from '../clabsi-heatmap/clabsi-heatmap.component';
 import { AreaChartComponent } from '../area-chart/area-chart.component';
+import { PieChartComponent } from '../pie-chart/pie-chart.component';
+
 
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
@@ -14,7 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatTabsModule, BarChartComponent, LineChartComponent, DrillDownChartComponent, HeatMapComponent, AreaChartComponent, MatIconModule],
+  imports: [MatTabsModule, BarChartComponent, LineChartComponent, DrillDownChartComponent, HeatMapComponent, AreaChartComponent, MatIconModule, PieChartComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

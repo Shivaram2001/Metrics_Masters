@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef, ElementRef } from '@angular/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { Color, ScaleType } from '@swimlane/ngx-charts';
-import { CommonModule } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import * as data from '../data/heat-map.json';
 
 @Component({
