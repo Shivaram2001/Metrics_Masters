@@ -1,48 +1,55 @@
 import { Component, OnInit } from '@angular/core';
 import * as pivcJson from '../data/pivc-dwell-time.json';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { LegendPosition, NgxChartsModule } from '@swimlane/ngx-charts';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-area-chart',
-  standalone: true,
   imports: [NgxChartsModule, FormsModule, CommonModule],
   templateUrl: './area-chart.component.html',
   styleUrls: ['./area-chart.component.css'],
 })
 export class AreaChartComponent implements OnInit {
   multi: any[] = [];
-  chartView: [number, number] = [800, 400];
+  view: any[] = [900, 900];
 
-  legend = true;
-  showLabels = true;
-  animations = true;
-  xAxis = true;
-  yAxis = true;
-  showXAxisLabel = true;
-  showYAxisLabel = true;
-  xAxisLabel = 'Year';
-  yAxisLabel = 'Dwell Time (%)';
-  timeline = true;
+  // options
+  legend: boolean = true;
+  showLabels: boolean = true;
+  animations: boolean = true;
+  xAxis: boolean = true;
+  yAxis: boolean = true;
+  showYAxisLabel: boolean = true;
+  showXAxisLabel: boolean = true;
+  xAxisLabel: string = 'Year';
+  yAxisLabel: string = 'Population';
+  timeline: boolean = true;
+  chartView: [number, number] = [0, 0]
+  legendBelow: LegendPosition = LegendPosition.Below
 
   colorScheme = {
-    domain: ['#42a5f5', '#66bb6a', '#ffa726', '#ab47bc']
+    domain: ['#5AA454'],
   };
 
-  ngOnInit() {
+  ngOnInit() {  
     this.prepareMainChart();
   }
 
   prepareMainChart() {
-    const copy = JSON.parse(JSON.stringify(pivcJson.occurrenceDetails));
+    this.multi = pivcJson.occurrenceDetails
 
-    this.multi = copy.map((item: any) => ({
-      name: item.assessmentMonthYear,
-      series: item.lineChartGroupData.map((point: any) => ({
-        name: point.field.split(' ')[0],
-        value: point.value
-      }))
+    let multiCopy = JSON.parse(JSON.stringify(this.multi));
+
+    multiCopy = multiCopy.map((el: any) => ({
+      name: el.assessmentMonthYear,
+      series: el.lineChartGroupData.map((el1: any) => ({
+        name: el1.field.split(' ')[0],
+        value: el1.value,
+      })),
     }));
+
+    this.multi = multiCopy;
   }
 }
+
