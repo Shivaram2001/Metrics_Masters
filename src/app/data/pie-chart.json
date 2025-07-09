@@ -1,14 +1,33 @@
-[
-  {
-    "name": "Category A",
-    "value": 30
-  },
-  {
-    "name": "Category B",
-    "value": 50
-  },
-  {
-    "name": "Category C",
-    "value": 20
-  }
-]
+{
+    "By Hospital Unit": {
+        "ICU": 35,
+        "NICU": 20,
+        "Surgical Step-Down": 15,
+        "Medical Ward": 10,
+        "Pediatric Unit": 8,
+        "Emergency Department": 5,
+        "Oncology Unit": 4,
+        "Cardiology Unit": 3,
+        "Neurology Unit": 2,
+        "Other": 3
+    },
+    "By Pathogen Type": {
+        "Staphylococcus aureus (MRSA)": 30,
+        "Candida species": 25,
+        "Enterococcus species": 15,
+        "Klebsiella pneumoniae": 10,
+        "Pseudomonas aeruginosa": 8,
+        "Escherichia coli": 7,
+        "Acinetobacter baumannii": 3,
+        "Serratia marcescens": 1,
+        "Other": 1
+    },
+    "By Infection Source": {
+        "Insertion Site Contamination": 40,
+        "Catheter Hub Contamination": 25,
+        "Improper Maintenance": 20,
+        "Contaminated Infusate": 5,
+        "Breaks in Aseptic Technique": 5,
+        "Unknown": 5
+    }
+}

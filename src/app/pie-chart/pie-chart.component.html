@@ -1,12 +1,16 @@
-<div class="chart-view-wrapper">
-  <ngx-charts-pie-chart
-    [view]="chartView"
-    [results]="pieData"
-    [legend]="legend"
-    [labels]="showLabels"
-    [doughnut]="false"
-    [explodeSlices]="false"
-    [legendPosition]="legendPosition"
-  >
-  </ngx-charts-pie-chart>
-</div>
+
+<label>
+  <input type="checkbox" [(ngModel)]="colorToggle" />
+  Use Monochromatic Color Scheme
+</label>
+
+<h2>CLABSI by Infection Source</h2>
+<ngx-charts-pie-chart
+  [view]="chartView"
+  [results]="infectionSourceData"
+  [legend]="legend"
+  [legendPosition]="legendPosition"
+  [labels]="showLabels"
+[scheme]="colorScheme"
+  >
+</ngx-charts-pie-chart>

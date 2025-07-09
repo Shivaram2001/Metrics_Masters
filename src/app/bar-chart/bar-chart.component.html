@@ -1,10 +1,25 @@
 <div class="chart-view-wrapper" id="chartToCapture">
   <div class="chart-title">CLABSI Occurrence by Device Type</div>
+  
+<div class="year-toggle-controls">
+  <label *ngFor="let year of availableYears">
+    <input type="checkbox" [value]="year" [(ngModel)]="yearSelection[year]" (change)="filterChartData()" />
+    {{ year }}
+  </label>
+  
+<label>
+    <input type="checkbox" [(ngModel)]="showDataLabels" />
+    Show Data Labels
+  </label>
+
+</div>
+
 
   <div class="chart-legend-layout">
     <ngx-charts-bar-vertical-2d
       [results]="mainChartData"
       [view]="chartView"
+      [legend]="legend"
       [scheme]="colorScheme"
       [xAxis]="true"
       [yAxis]="true"
@@ -13,7 +28,10 @@
       [xAxisLabel]="'Year'"
       [showYAxisLabel]="true"
       [yAxisLabel]="'Number of CLABSIs'"
-      [animations]="true">
+      [animations]="true"
+      [showDataLabel]="showDataLabels"
+      [legendTitle]="'Year'"
+      >
     </ngx-charts-bar-vertical-2d>
   </div>
 </div>
